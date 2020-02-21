@@ -1,10 +1,17 @@
-// 1 ЗАДАНИЕ
+// 1 ЗАДАНИЕ 1 Способ
 var i = 1;
 do{
     console.log(i);
     i++;
 }
 while((i % 2) != 0);
+
+// 1 ЗАДАНИЕ 2 Способ
+var i = 1;
+while((i % 2) != 0){
+    console.log(i);
+    i++;
+}
 
 
 // 2 ЗАДАНИЕ
@@ -24,7 +31,7 @@ for(var i = min; i <= max; i++){
 
 
 // 3 ЗАДАНИЕ
-var number1 = Math.ceil(Math.random() * 10);
+var number1 = Number(Math.ceil(Math.random() * 10));
 var user;
 
 while(user !== number1)
@@ -36,7 +43,7 @@ while(user !== number1)
         console.log("Правильно!")
         break;
     }
-    if(user == null)
+    if(user === null)
     {
         console.clear();
         console.log("Вы отменили игру");
@@ -45,9 +52,3 @@ while(user !== number1)
     console.log("Попробуйте еще раз");
 
 }
-
-
-
-
-
-
